@@ -1,8 +1,14 @@
+/* FONTS */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 @font-face {
-    font-family: "Grooved";
+    font-family: "grooved";
     src: url(./utils/GROOVED\ PERSONAL\ USE.ttf)
+}
+
+:root {
+    --padding-global: 10vw;
 }
 
 * {
@@ -11,4 +17,184 @@
     border: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: #000;
+    padding: 5px 0;
+}
+
+.logo {
+    min-width: 3%;
+    max-width: 70px;
+}
+
+/* MAIN */
+
+.main {
+    display: flex;
+    flex-direction: row;
+}
+
+.apresentation {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    max-height: 782px;
+}
+
+.right {
+    justify-content: right;
+    background-image: url(./assets/backMainTwo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left {
+    background-image: url(./assets/backMainOne.svg);
+}
+
+.apresentation p {
+    font-family: 'grooved';
+    font-size: 1000%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: #fff;
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+}
+
+.left p {
+    justify-content: left;
+}
+
+/* SUBSCRIBE AREA */
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--padding-global);
+}
+
+.subscribe h1 {
+    color: #fff;
+    font-size: 5vw;
+}
+
+.btnSubscribe {
+    color: #fff;
+    background-color: #C50615;
+    border: 2.5px solid #fff;
+    border-radius: 15px;
+    font-size: 1.5vw;
+    font-weight: 500;
+    width: 30%;
+    height: 15%;
+    margin-top: 30px;
+}
+
+/* Gallery */
+
+.video {
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--padding-global);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+
+.video video {
+    width: 60vw;
+    margin-bottom: 50px;
+}
+
+/* About the projetc */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    padding: 0 var(--padding-global);
+    align-items: center;
+}
+
+.about h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    text-align: justify;
+    font-size: 20px;
+}
+
+.about::after,
+.about::before {
+    content: "";
+    height: 1px;
+    width: 85%;
+    background-color: #000;
+    margin: 50px;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    color: #fff;
+    padding: 20px var(--padding-global);
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    gap: 50px;
+}
+
+.brev {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.textFooter {
+    margin: 5px 0;
+}
+
+.socialMedias {
+    margin: 0px;
+    display: flex;
+    gap: 50px;
+    width: 100%;
+}
+
+.directs {
+    color: #A7A7A7;
+}
+
+footer img {
+    max-width: 15%;
+    min-width: 150px;
 }
