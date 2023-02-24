@@ -1,0 +1,40 @@
+/* footer */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    color: #fff;
+    padding: 20px var(--padding-global);
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    gap: 50px;
+}
+
+.brev {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.textFooter {
+    margin: 5px 0;
+}
+
+.socialMedias {
+    margin: 0px;
+    display: flex;
+    gap: 20px;
+    font-size: 2rem;
+}
+
+.directs {
+    color: #A7A7A7;
+}
+
+.footer img {
+    max-width: 15%;
+    min-width: 100px;
+}
